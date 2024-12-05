@@ -1,0 +1,235 @@
+script: "/rate/rate.gui_script"
+fonts {
+  name: "myFont"
+  font: "/assets/font/myFont.font"
+}
+textures {
+  name: "UI"
+  texture: "/assets/ui/UI.atlas"
+}
+nodes {
+  position {
+    x: 270.0
+    y: 480.0
+  }
+  size {
+    x: 540.0
+    y: 960.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  id: "rate_bg"
+  adjust_mode: ADJUST_MODE_STRETCH
+  alpha: 0.86
+  enabled: false
+}
+nodes {
+  scale {
+    x: 1.38
+    y: 1.38
+    z: 1.38
+  }
+  size {
+    x: 280.0
+    y: 190.0
+  }
+  type: TYPE_BOX
+  id: "form"
+  parent: "rate_bg"
+  slice9 {
+    x: 15.0
+    y: 15.0
+    z: 15.0
+    w: 15.0
+  }
+}
+nodes {
+  size {
+    x: 300.0
+    y: 200.0
+  }
+  type: TYPE_BOX
+  id: "box"
+  parent: "form"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    y: 49.0
+  }
+  scale {
+    x: 0.7
+    y: 0.7
+    z: 0.84
+  }
+  size {
+    x: 290.0
+    y: 40.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "\320\222\320\260\320\274 \320\275\321\200\320\260\320\262\320\270\321\202\321\201\321\217 \320\270\320\263\321\200\320\260?"
+  font: "myFont"
+  id: "you_like_game"
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  shadow {
+    x: 0.788
+    y: 0.447
+    z: 0.447
+  }
+  parent: "form"
+}
+nodes {
+  position {
+    x: -102.0
+    y: -2.0
+  }
+  scale {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  texture: "UI/star_0"
+  id: "s0"
+  parent: "form"
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -48.0
+    y: -2.0
+  }
+  scale {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  texture: "UI/star_0"
+  id: "s1"
+  parent: "form"
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 5.0
+    y: -2.0
+  }
+  scale {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  texture: "UI/star_0"
+  id: "s2"
+  parent: "form"
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 56.0
+    y: -2.0
+  }
+  scale {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  texture: "UI/star_0"
+  id: "s3"
+  parent: "form"
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 107.0
+    y: -2.0
+  }
+  scale {
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  }
+  type: TYPE_BOX
+  texture: "UI/star_0"
+  id: "s4"
+  parent: "form"
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: -54.0
+  }
+  size {
+    x: 130.0
+    y: 40.0
+  }
+  type: TYPE_BOX
+  texture: "UI/btn_b"
+  id: "btnRate"
+  parent: "form"
+}
+nodes {
+  scale {
+    x: 0.504
+    y: 0.504
+    z: 0.504
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "\320\236\320\246\320\225\320\235\320\230\320\242\320\254"
+  font: "myFont"
+  id: "rate"
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  shadow {
+    x: 0.788
+    y: 0.447
+    z: 0.447
+  }
+  parent: "btnRate"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 119.08696
+    y: 84.753624
+  }
+  size {
+    x: 50.0
+    y: 50.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  texture: "UI/close"
+  id: "btnClose"
+  parent: "form"
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
+max_nodes: 15

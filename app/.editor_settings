@@ -1,0 +1,169 @@
+{
+  :bundle {
+    :android {
+      :architecture {
+        :arm64-android true
+        :armv7-android true
+      }
+      :format "apk"
+      :install false
+      :launch false
+    }
+    :build-report false
+    :contentless false
+    :debug-symbols true
+    :html5 {
+      :architecture {
+        :js-web false
+        :wasm-web true
+      }
+    }
+    :liveupdate false
+    :macos {
+      :architecture {
+        :arm64-macos true
+        :x86_64-macos true
+      }
+    }
+    :output-directory "/Users/pavel/Dev/match3-core/app/build"
+    :texture-compression "enabled"
+    :variant "debug"
+  }
+  :code {
+    :find {
+      :term "anima"
+      :wrap true
+    }
+  }
+  :search-in-files {
+    :term "projection_fn"
+  }
+  :workflow {
+    :recent-files [
+      [
+        "/rate/rate.gui"
+        :scene
+      ]
+      [
+        "/project_settings/Assets.car"
+        :code
+      ]
+      [
+        "/defjs/src/main.cpp"
+        :code
+      ]
+      [
+        "/defjs/defjs.lua"
+        :code
+      ]
+      [
+        "/defjs/manifests/web/engine_template.html"
+        :html
+      ]
+      [
+        "/defjs/lib/web/defjs.js"
+        :code
+      ]
+      [
+        "/defjs/ext.manifest"
+        :code
+      ]
+      [
+        "/assets/ui/UI.atlas"
+        :scene
+      ]
+      [
+        "/assets/font/myFont.font"
+        :scene
+      ]
+      [
+        "/assets/materials/ontop_sprite.material"
+        :cljfx-form-view
+      ]
+      [
+        "/assets/materials/highlight_sprite.material"
+        :cljfx-form-view
+      ]
+      [
+        "/druid/event.lua"
+        :code
+      ]
+      [
+        "/menu/menu.gui_script"
+        :code
+      ]
+      [
+        "/utils/utils.lua"
+        :code
+      ]
+      [
+        "/druid/base/button.lua"
+        :code
+      ]
+      [
+        "/review/ext.manifest"
+        :code
+      ]
+      [
+        "/yametrica/ext.manifest"
+        :code
+      ]
+      [
+        "/project_settings/render.render_script"
+        :code
+      ]
+      [
+        "/yametrica/src/extension.cpp"
+        :code
+      ]
+      [
+        "/screenshot/src/screenshot_html.cpp"
+        :code
+      ]
+      [
+        "/screenshot/src/screenshot.h"
+        :code
+      ]
+      [
+        "/screenshot/src/screenshot.cpp"
+        :code
+      ]
+      [
+        "/screenshot/src/screenshot_opengl.cpp"
+        :code
+      ]
+      [
+        "/screenshot/ext.manifest"
+        :code
+      ]
+      [
+        "/main/main.collection"
+        :scene
+      ]
+      [
+        "/menu/menu.gui"
+        :scene
+      ]
+      [
+        "/assets/display.render_target"
+        :cljfx-form-view
+      ]
+      [
+        "/game.project"
+        :cljfx-form-view
+      ]
+      [
+        "/project_settings/render.render"
+        :cljfx-form-view
+      ]
+      [
+        "/menu/menu.collection"
+        :scene
+      ]
+      [
+        "/menu/logic.script"
+        :code
+      ]
+    ]
+  }
+}

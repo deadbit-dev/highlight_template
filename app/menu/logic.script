@@ -1,0 +1,34 @@
+local ____exports = {}
+local on_highlight
+function on_highlight(data)
+    go.set(data.highlight_sprite, "material", data.highlight_material)
+end
+go.property(
+    "highlight_sprite",
+    msg.url()
+)
+go.property(
+    "highlight_material",
+    resource.material()
+)
+function ____exports.init(self)
+    Manager.init_script()
+    msg.post(".", "acquire_input_focus")
+    EventBus.on(
+        "HIGHLIGHT",
+        function() return on_highlight(self) end
+    )
+end
+function ____exports.on_input(self, action_id, action)
+end
+function ____exports.on_message(self, message_id, _message, sender)
+    Manager.on_message(self, message_id, _message, sender)
+end
+function ____exports.final(self)
+    Manager.final_script()
+end
+init = ____exports.init
+on_input = ____exports.on_input
+on_message = ____exports.on_message
+final = ____exports.final
+
